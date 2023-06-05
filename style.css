@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+/*Fizemos isso aqui para centralizar todos os itens no layout*/
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #ff3bf5d5, #e625ffda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Aqui ajustamos a posição e aparência dos itens dentro da classe relogio-container*/
+.relogio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 550px;
+  background: blue;
+  border-radius: 25px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Aqui ajustamos todos os itens dentro das divs na classe do container*/
+.relogio-container div {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(5, 5, 5, 0.9);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+
+/*Aqui alteramos os textos do span dentro do relogio-container*/
+.relogio-container span {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+/*Aqui pegamos a classe tempo dentro do span e alteramos o texto*/
+.relogio-container span.tempo {
+  font-size: 10px;
+}
+
+.buttons-container{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.buttons{
+  border-radius: 10px;
+  border: none;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px 1px;
+}
+
+.buttons:active{
+  width: 59px;
+  height: 29px;
+  box-shadow: 0px 0px 0px 0px;
+}
